@@ -1,7 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box; /* Kluczowe: padding nie powiększa szerokości elementu */
+	box-sizing: border-box;
+	/* Kluczowe: padding nie powiększa szerokości elementu */
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -17,8 +18,8 @@
 
 .main-content {
 	display: flex;
-	height: calc(100vh - var(--navbar-height));
-	overflow: hidden; /*blokada scrolla*/
+	overflow: hidden;
+	/*blokada scrolla*/
 	background-color: #f9faf5;
 	padding: 0;
 }
@@ -42,6 +43,7 @@
 	flex: 1;
 	padding: 2rem;
 	overflow-y: auto;
+	max-height: 100vh;
 }
 
 .card {
@@ -52,7 +54,8 @@
 }
 
 .card img {
-	align-self: center; /* Zmieniłem na center, żeby pasowało do napisu CENA */
+	align-self: center;
+	/* Zmieniłem na center, żeby pasowało do napisu CENA */
 	max-width: 100%;
 	height: auto;
 }
@@ -75,7 +78,8 @@
 }
 
 .cart-page-container {
-	background-color: #f9faf5; /* Tło strony jak na zrzucie */
+	background-color: #f9faf5;
+	/* Tło strony jak na zrzucie */
 	padding: 30px 2%;
 }
 
@@ -97,6 +101,7 @@
 .cart-main {
 	flex: 3;
 }
+
 .cart-sidebar {
 	flex: 1.2;
 	margin-top: 71.5px;
@@ -126,28 +131,44 @@
 	padding-bottom: 10px;
 	margin-bottom: 15px;
 }
+
 .text-btn {
-	background: none; /* Usuwa szare tło przycisku */
-	border: none; /* Usuwa obramowanie */
-	color: #00a5a5; /* Charakterystyczny morski kolor Allegro */
-	font-size: 13px; /* Dopasowana wielkość czcionki */
-	font-weight: 600; /* Lekkie pogrubienie dla czytelności */
-	cursor: pointer; /* Zmienia kursor na rączkę przy najechaniu */
-	text-transform: uppercase; /* Wymusza wielkie litery jak na zrzucie */
-	padding: 0; /* Usuwa domyślne wewnętrzne odstępy */
-	transition: 0.2s; /* Płynna zmiana koloru przy interakcji */
+	background: none;
+	/* Usuwa szare tło przycisku */
+	border: none;
+	/* Usuwa obramowanie */
+	color: #00a5a5;
+	/* Charakterystyczny morski kolor Allegro */
+	font-size: 13px;
+	/* Dopasowana wielkość czcionki */
+	font-weight: 600;
+	/* Lekkie pogrubienie dla czytelności */
+	cursor: pointer;
+	/* Zmienia kursor na rączkę przy najechaniu */
+	text-transform: uppercase;
+	/* Wymusza wielkie litery jak na zrzucie */
+	padding: 0;
+	/* Usuwa domyślne wewnętrzne odstępy */
+	transition: 0.2s;
+	/* Płynna zmiana koloru przy interakcji */
 }
 
 .text-btn:hover {
-	color: #007a7a; /* Ciemniejszy odcień przy najechaniu */
-	text-decoration: underline; /* Podkreślenie przy najechaniu */
+	color: #007a7a;
+	/* Ciemniejszy odcień przy najechaniu */
+	text-decoration: underline;
+	/* Podkreślenie przy najechaniu */
 }
 
 .star-checkbox {
-	display: flex; /* Ustawia dzieci w rzędzie */
-	align-items: center; /* Centruje gwiazdkę i napis w pionie względem siebie */
-	gap: 8px; /* Tworzy odstęp między gwiazdką a napisem */
-	cursor: pointer; /* Zmienia kursor na rączkę przy najechaniu */
+	display: flex;
+	/* Ustawia dzieci w rzędzie */
+	align-items: center;
+	/* Centruje gwiazdkę i napis w pionie względem siebie */
+	gap: 8px;
+	/* Tworzy odstęp między gwiazdką a napisem */
+	cursor: pointer;
+	/* Zmienia kursor na rączkę przy najechaniu */
 }
 
 /* Przycisk w kształcie gwiazdy */
@@ -163,14 +184,16 @@
 .star-icon {
 	display: inline-block;
 	position: relative;
-	width: 24px; /* Wielkość gwiazdy */
+	width: 24px;
+	/* Wielkość gwiazdy */
 	height: 24px;
 	cursor: pointer;
 	vertical-align: middle;
 	transition:
 		transform 0.2s,
 		rotate 0.3s ease;
-	margin-right: 8px; /* Odstęp od tekstu */
+	margin-right: 8px;
+	/* Odstęp od tekstu */
 }
 
 .star-napis {
@@ -192,8 +215,10 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: transparent; /* Kolor środka odznaczonej gwiazdy */
-	border: 15px solid #ccc; /* Kolor ramki odznaczonej gwiazdy */
+	background-color: transparent;
+	/* Kolor środka odznaczonej gwiazdy */
+	border: 15px solid #ccc;
+	/* Kolor ramki odznaczonej gwiazdy */
 	clip-path: polygon(
 		50% 0%,
 		61% 35%,
@@ -231,9 +256,11 @@
 	background: #eee;
 	flex-shrink: 0;
 }
+
 .product-info {
 	flex: 1;
 }
+
 .product-name {
 	font-size: 14px;
 	text-align: LEFT;
@@ -250,12 +277,14 @@
 	border: 1px solid #ccc;
 	display: flex;
 }
+
 .qty-picker button {
 	border: none;
 	background: white;
 	padding: 5px 12px;
 	cursor: pointer;
 }
+
 .qty-picker input {
 	width: 60px;
 	text-align: center;
@@ -269,6 +298,7 @@
 	font-size: 20px;
 	font-weight: bold;
 }
+
 .smart-delivery {
 	text-align: right;
 	font-size: 12px;
@@ -284,11 +314,13 @@
 	font-family: "Canta one", serif;
 	margin: 40px 0;
 }
+
 .upsell-grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 15px;
 }
+
 .upsell-box {
 	background: white;
 	padding: 15px;
@@ -296,24 +328,29 @@
 	height: 45%;
 	width: 100%;
 }
+
 .img-placeholder-small {
 	height: 100px;
 	background: #eee;
 	margin-bottom: 10px;
 }
+
 .price-mid {
 	font-weight: bold;
 	margin: 5px 0;
 }
+
 .upsell-text {
 	font-size: 11px;
 	color: #00a5a5;
 	height: 30px;
 	overflow: hidden;
 }
+
 .upsell-img img {
 	height: 65%;
 }
+
 .add-btn {
 	background: none;
 	border: none;
@@ -322,6 +359,7 @@
 	cursor: pointer;
 	margin-top: 10px;
 }
+
 .add-btn:hover {
 	color: #0a1a4e;
 }
@@ -333,14 +371,17 @@
 	margin-bottom: 10px;
 	font-size: 14px;
 }
+
 .total-line {
 	font-size: 16px;
 	font-weight: bold;
 	margin-top: 15px;
 }
+
 .final-price {
 	font-size: 24px;
 }
+
 .divider-line {
 	border: none;
 	border-top: 1px solid #eee;
@@ -363,24 +404,29 @@
 	color: white;
 	font-size: 16px;
 }
+
 .btn-etoile.green:hover {
 	background: #c4ae89;
 	color: white;
 	font-size: 16px;
 }
+
 .btn-etoile.blue {
 	background: #0a1a4e;
 	color: white;
 	font-size: 16px;
 }
+
 .btn-etoile.blue:hover {
 	background: #a1b0e6;
 }
+
 .btn-etoile.transparent {
 	background: none;
 	color: #a1b0e6;
 	font-size: 16px;
 }
+
 .btn-etoile.transparent:hover {
 	color: #0a1a4e;
 }
@@ -391,6 +437,7 @@
 	align-items: flex-start;
 	border-left: 4px solid #0a1a4e;
 }
+
 .shield-icon {
 	background: #00a5a5;
 	color: white;
@@ -398,11 +445,13 @@
 	border-radius: 50%;
 	font-weight: bold;
 }
+
 .protection-text {
 	margin-top: 10px;
 	font-size: 15px;
 	text-align: left;
 }
+
 .protection-img img {
 	height: 60px;
 }
@@ -412,13 +461,16 @@
 	#root {
 		--navbar-height: 70px;
 	}
+
 	.nav-logo {
 		height: 50px;
 		font-size: 1.2rem;
 	}
+
 	.nav-logo img {
 		height: 45px;
 	}
+
 	.nav-iconCart-img,
 	.nav-iconFav-img,
 	.nav-iconAcc-img {
@@ -431,13 +483,16 @@
 		margin-top: 10px;
 		margin-bottom: 15px;
 	}
+
 	.cart-top-bar {
 		font-size: 14px;
 	}
+
 	.product-name {
 		font-size: 13px;
 		line-height: 1.3;
 	}
+
 	.price-big {
 		font-size: 18px;
 	}
@@ -447,6 +502,7 @@
 		width: 70px;
 		height: 70px;
 	}
+
 	.white-card {
 		padding: 12px;
 		margin-bottom: 10px;
@@ -457,12 +513,16 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	.cart-main {
-		order: 1; /* Produkty i Upsell są pierwsze */
+		order: 1;
+		/* Produkty i Upsell są pierwsze */
 		width: 100%;
 	}
+
 	.cart-sidebar {
-		order: 2; /* Sidebar ląduje na samym dole */
+		order: 2;
+		/* Sidebar ląduje na samym dole */
 		width: 100%;
 		margin-top: 20px;
 		position: static;
@@ -475,20 +535,27 @@
 	}
 
 	.upsell-grid {
-		display: flex; /* Zmieniamy grid na flex */
-		overflow-x: auto; /* Włączamy przewijanie w poziomie */
+		display: flex;
+		/* Zmieniamy grid na flex */
+		overflow-x: auto;
+		/* Włączamy przewijanie w poziomie */
 		gap: 10px;
-		padding-bottom: 10px; /* Miejsce na pasek przewijania */
-		scroll-snap-type: x mandatory; /* Efekt "przyklejania" do kafelka */
-		-webkit-overflow-scrolling: touch; /* Płynne przewijanie na iOS */
+		padding-bottom: 10px;
+		/* Miejsce na pasek przewijania */
+		scroll-snap-type: x mandatory;
+		/* Efekt "przyklejania" do kafelka */
+		-webkit-overflow-scrolling: touch;
+		/* Płynne przewijanie na iOS */
 	}
 
 	.upsell-box {
-		flex: 0 0 45%; /* Każdy kafelek zajmuje nieco mniej niż połowę szerokości ekranu */
+		flex: 0 0 45%;
+		/* Każdy kafelek zajmuje nieco mniej niż połowę szerokości ekranu */
 		scroll-snap-align: start;
 		padding: 8px;
 		height: auto;
-		background: white; /* Upewniamy się, że tło jest białe */
+		background: white;
+		/* Upewniamy się, że tło jest białe */
 	}
 
 	.img-placeholder-small {
@@ -506,21 +573,27 @@
 	.upsell-grid::-webkit-scrollbar {
 		display: none;
 	}
+
 	.upsell-grid {
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none;
+		/* IE and Edge */
+		scrollbar-width: none;
+		/* Firefox */
 	}
 
 	/* ZACHOWANE: 5. Sidebar / Podsumowanie */
 	.final-price {
 		font-size: 20px;
 	}
+
 	.summary-line {
 		font-size: 12px;
 	}
+
 	.protection-text {
 		font-size: 12px;
 	}
+
 	.protection-img img {
 		height: 40px;
 	}
